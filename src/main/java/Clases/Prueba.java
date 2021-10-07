@@ -10,5 +10,10 @@ package Clases;
  * @author user
  */
 public class Prueba {
+   
+    {
     
+    System.out.println("Hola a todos");
+    }
+   
 }
