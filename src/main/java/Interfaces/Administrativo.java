@@ -28,11 +28,14 @@ public class Administrativo extends javax.swing.JFrame {
     private void initComponents() {
 
         btnAgregarInventario = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnAgregarInventario.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnAgregarInventario.setText("Añadir nuevo producto al inventario");
+
+        jButton1.setText("jButton1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -40,7 +43,9 @@ public class Administrativo extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(49, 49, 49)
-                .addComponent(btnAgregarInventario)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton1)
+                    .addComponent(btnAgregarInventario))
                 .addContainerGap(57, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -48,7 +53,9 @@ public class Administrativo extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(45, 45, 45)
                 .addComponent(btnAgregarInventario)
-                .addContainerGap(223, Short.MAX_VALUE))
+                .addGap(100, 100, 100)
+                .addComponent(jButton1)
+                .addContainerGap(100, Short.MAX_VALUE))
         );
 
         pack();
@@ -91,5 +98,6 @@ public class Administrativo extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregarInventario;
+    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
