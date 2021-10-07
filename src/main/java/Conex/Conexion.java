@@ -3,22 +3,36 @@ package Conex;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
  * @author jaider
  */
 public class Conexion {
-    Connection con;
-    public Conexion(){
-        try{
+    
+    private final String base= "alfa_omega_bd";
+    private final String user= "root";
+    private final String password= "holasoyyo20";
+    private final String url= "jdbc:mysql://localhost:3306/"+base;
+ 
+    private Connection con=null;
+    
+    public Connection getConexion(){
+        
+        try {
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/alfa_omega_bd","root","holasoyyo20");
-        }catch(Exception e){
-            System.err.println("Error: "+e);
+            con=DriverManager.getConnection(url,user,password);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
         }
+        return con;
 }
-    public static void main(String[] args){
+   /* public static void main(String[] args){
         Conexion cn= new Conexion();
         
         Statement st;
@@ -35,5 +49,5 @@ public class Conexion {
             System.err.println("Error: "+e);
         }
         
-    }
+    }*/
 }

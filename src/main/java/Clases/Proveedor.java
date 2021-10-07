@@ -11,15 +11,15 @@ package Clases;
  */
 public class Proveedor extends Persona {
 
-    public Proveedor(String idUnico, String nombre, String direccion, String numeroTelefono, String correo) {
+    public Proveedor(int idUnico, String nombre, String direccion, String numeroTelefono, String correo) {
         super(idUnico, nombre, direccion, numeroTelefono, correo);
     }
 
-    public String getIdUnico() {
+    public int getIdUnico() {
         return idUnico;
     }
 
-    public void setIdUnico(String idUnico) {
+    public void setIdUnico(int idUnico) {
         this.idUnico = idUnico;
     }
 

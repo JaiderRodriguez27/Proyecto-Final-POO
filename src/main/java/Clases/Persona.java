@@ -10,13 +10,13 @@ package Clases;
  * @author jaider
  */
 public class Persona {
-    protected String idUnico;
+    protected int idUnico;
     protected String nombre;
     protected String direccion;
     protected String numeroTelefono;
     protected String correo;
 
-    public Persona(String idUnico, String nombre, String direccion, String numeroTelefono, String correo) {
+    public Persona(int idUnico, String nombre, String direccion, String numeroTelefono, String correo) {
         this.idUnico = idUnico;
         this.nombre = nombre;
         this.direccion = direccion;
@@ -24,11 +24,11 @@ public class Persona {
         this.correo = correo;
     }
 
-    public String getIdUnico() {
+    public int getIdUnico() {
         return idUnico;
     }
 
-    public void setIdUnico(String idUnico) {
+    public void setIdUnico(int idUnico) {
         this.idUnico = idUnico;
     }
 
