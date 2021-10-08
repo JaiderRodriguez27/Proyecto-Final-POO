@@ -7,10 +7,9 @@
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
-            <groupId>MySqlDriver</groupId>
-            <artifactId>MySqlDriver</artifactId>
-            <version>8.0.26</version>
-            <type>jar</type>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>AbsoluteLayout</artifactId>
+            <version>RELEASE124</version>
         </dependency>
     </dependencies>
     <properties>

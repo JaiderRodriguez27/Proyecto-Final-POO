@@ -55,7 +55,7 @@ public class Ventana extends javax.swing.JFrame {
                 btnNuevaCompraActionPerformed(evt);
             }
         });
-        getContentPane().add(btnNuevaCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, 216, 80));
+        getContentPane().add(btnNuevaCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 280, 216, 80));
 
         btnEstadoCompra.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnEstadoCompra.setText("Estado de compra");
