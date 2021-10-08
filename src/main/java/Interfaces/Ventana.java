@@ -105,7 +105,6 @@ public class Ventana extends javax.swing.JFrame {
 
     private void btnEstadoCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstadoCompraActionPerformed
         // TODO add your handling code here:
-        
     }//GEN-LAST:event_btnEstadoCompraActionPerformed
 
     private void btnNuevaCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaCompraActionPerformed
@@ -113,6 +112,10 @@ public class Ventana extends javax.swing.JFrame {
         Compra compra= new Compra();
         compra.setVisible(true);
         this.dispose();
+        
+        // Nombre_interfaz nombre_objeto = new Nombre_interfaz();
+        //nombre_objeto.setVisible(true);
+        //this.dispose();
     }//GEN-LAST:event_btnNuevaCompraActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
