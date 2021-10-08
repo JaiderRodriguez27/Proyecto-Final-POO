@@ -16,6 +16,7 @@ public class Ventana extends javax.swing.JFrame {
      */
     public Ventana() {
         initComponents();
+        this.setExtendedState(6);
     }
 
     /**
@@ -34,71 +35,46 @@ public class Ventana extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Alfa Omega");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnAdministrativo.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnAdministrativo.setText("Administrativo");
+        btnAdministrativo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAdministrativo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAdministrativoActionPerformed(evt);
             }
         });
+        getContentPane().add(btnAdministrativo, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, 216, 80));
 
         btnNuevaCompra.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnNuevaCompra.setText("Nueva compra");
+        btnNuevaCompra.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnNuevaCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevaCompraActionPerformed(evt);
             }
         });
+        getContentPane().add(btnNuevaCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, 216, 80));
 
         btnEstadoCompra.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnEstadoCompra.setText("Estado de compra");
+        btnEstadoCompra.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnEstadoCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEstadoCompraActionPerformed(evt);
             }
         });
+        getContentPane().add(btnEstadoCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 110, 216, 80));
 
         jButton4.setText("Salir");
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(243, 243, 243)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnNuevaCompra)
-                    .addComponent(btnAdministrativo))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(229, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnEstadoCompra)
-                        .addGap(224, 224, 224))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(154, Short.MAX_VALUE)
-                .addComponent(btnAdministrativo)
-                .addGap(30, 30, 30)
-                .addComponent(btnNuevaCompra)
-                .addGap(26, 26, 26)
-                .addComponent(btnEstadoCompra)
-                .addGap(93, 93, 93)
-                .addComponent(jButton4)
-                .addGap(18, 18, 18))
-        );
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 500, 66, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
