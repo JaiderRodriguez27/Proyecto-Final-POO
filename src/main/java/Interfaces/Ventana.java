@@ -27,35 +27,35 @@ public class Ventana extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnAdministrativo = new javax.swing.JButton();
+        btnNuevaCompra = new javax.swing.JButton();
+        btnEstadoCompra = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Alfa Omega");
 
-        jButton1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jButton1.setText("Administrativo");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnAdministrativo.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btnAdministrativo.setText("Administrativo");
+        btnAdministrativo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnAdministrativoActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jButton2.setText("Nueva compra");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnNuevaCompra.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btnNuevaCompra.setText("Nueva compra");
+        btnNuevaCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnNuevaCompraActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jButton3.setText("Estado de compra");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnEstadoCompra.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btnEstadoCompra.setText("Estado de compra");
+        btnEstadoCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnEstadoCompraActionPerformed(evt);
             }
         });
 
@@ -73,8 +73,8 @@ public class Ventana extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(243, 243, 243)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(btnNuevaCompra)
+                    .addComponent(btnAdministrativo))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(229, Short.MAX_VALUE)
@@ -83,18 +83,18 @@ public class Ventana extends javax.swing.JFrame {
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(19, 19, 19))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton3)
+                        .addComponent(btnEstadoCompra)
                         .addGap(224, 224, 224))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(154, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btnAdministrativo)
                 .addGap(30, 30, 30)
-                .addComponent(jButton2)
+                .addComponent(btnNuevaCompra)
                 .addGap(26, 26, 26)
-                .addComponent(jButton3)
+                .addComponent(btnEstadoCompra)
                 .addGap(93, 93, 93)
                 .addComponent(jButton4)
                 .addGap(18, 18, 18))
@@ -103,29 +103,30 @@ public class Ventana extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnEstadoCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstadoCompraActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+        
+    }//GEN-LAST:event_btnEstadoCompraActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnNuevaCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaCompraActionPerformed
         // TODO add your handling code here:
         Compra compra= new Compra();
         compra.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnNuevaCompraActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnAdministrativoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdministrativoActionPerformed
         // TODO add your handling code here:
         LoginAdministrativo login= new LoginAdministrativo();
         login.setVisible(true);
         this.dispose();
                 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnAdministrativoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,9 +164,9 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnAdministrativo;
+    private javax.swing.JButton btnEstadoCompra;
+    private javax.swing.JButton btnNuevaCompra;
     private javax.swing.JButton jButton4;
     // End of variables declaration//GEN-END:variables
 }

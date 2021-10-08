@@ -10,7 +10,7 @@ package Clases;
  * @author jaider
  */
 public class Producto {
-    protected String id;
+    protected int id;
     protected String nombreProducto;
     protected int precioVenta;
     protected int cantidadActual;
@@ -28,11 +28,11 @@ public class Producto {
     
     public Producto(){};
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

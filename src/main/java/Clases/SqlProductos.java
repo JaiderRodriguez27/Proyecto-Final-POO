@@ -15,10 +15,10 @@ import java.util.logging.Logger;
 /**
  *
  * @author jaider
- */
+*/ 
 public class SqlProductos extends Conexion{
     
-    public boolean registrarProducto(Cliente cliente){
+    public boolean registrarProducto(Producto producto){
         PreparedStatement ps = null;
         Connection con= getConexion();
         
@@ -26,11 +26,10 @@ public class SqlProductos extends Conexion{
         
         try {
             ps= con.prepareStatement(sql);
-            ps.setInt(1, cliente.getIdUnico());
-            ps.setString(2, cliente.getNombre());
-            ps.setString(3, cliente.getDireccion());
-            ps.setString(4, cliente.getNumeroTelefono());
-            ps.setString(5, cliente.getCorreo());
+            ps.setInt(1, producto.getId());
+            
+            
+            
             ps.execute();//Ejecutar insercion
             return true;
             
